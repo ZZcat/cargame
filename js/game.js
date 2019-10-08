@@ -28,6 +28,7 @@ var player;
 var myScore;
 function startGame() {
     myGameArea.start();
+    e = new component(100, 80, 'images/explosion.png', 0, 0, 'image');
     player = new component(80, 39.6, 'images/car.png', 10, 130.2, 'image');
     e1 = new component(90, 49.6, "images/enemy.png", 1000, 20, 'image' );
     e2 = new component(90, 49.6, "images/enemy.png", 1000, 100, 'image' );
@@ -187,7 +188,17 @@ if (player.crashWith(e1)) {
     if(e4.x <= -49.6){
 	    score.number += 1;
 	    e4.x = 1000;
-	    e4.y = Math.floor(Math.random() * 250.4) + 1
+	    e4.y = Math.floor(Math.random() * 250.4) + 1}
+    if (player.crashWith(e1)) {
+     e.update():
+    if (player.crashWith(e2)) {
+   e.update():
+    if (player.crashWith(e3)) {
+    e.update():
+    if (player.crashWith(e4)) {
+     e.update():
+ e.x = player.x;
+ e.y = player.y;
     }
  }
 }
