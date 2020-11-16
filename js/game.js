@@ -190,15 +190,18 @@ if (player.crashWith(e1)) {
 	    e4.x = 1000;
 	    e4.y = Math.floor(Math.random() * 250.4) + 1}
     if (player.crashWith(e1)) {
-     e.update():
+     e.update();
     if (player.crashWith(e2)) {
-   e.update():
+   e.update();
     if (player.crashWith(e3)) {
-    e.update():
+    e.update();
     if (player.crashWith(e4)) {
-     e.update():
+     e.update();
  e.x = player.x;
  e.y = player.y;
     }
+ }
+}
+		}
  }
 }
